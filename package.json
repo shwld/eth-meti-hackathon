@@ -21,5 +21,10 @@
     "truffle": "^5.5.25",
     "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.7.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.12.5"
   }
 }
