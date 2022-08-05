@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/shwld/eth-meti-hackathon#readme",
   "dependencies": {
-    "truffle": "^5.5.25"
+    "babel-polyfill": "^6.26.0",
+    "truffle": "^5.5.25",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.7.5"
   }
 }
