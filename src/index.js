@@ -2,11 +2,50 @@ import 'babel-polyfill';
 import Web3 from 'web3';
 
 // ブロックチェーンにデプロイしたスマートコントラクトのアドレス
-var smartContractAddress = '';
+var smartContractAddress = '0xb1fe60c0BC521726b0F303f5a2d44cb11a7FA899';
 
 // ABI(Application Binary Interface) はブロックチェーンの外からコントラクトを利用するための
 // インターフェースの定義です。
-var abi = [];
+var abi = [
+  {
+    inputs: [
+      {
+        internalType: 'string',
+        name: 'initMessage',
+        type: 'string',
+      },
+    ],
+    stateMutability: 'nonpayable',
+    type: 'constructor',
+  },
+  {
+    inputs: [],
+    name: 'message',
+    outputs: [
+      {
+        internalType: 'string',
+        name: '',
+        type: 'string',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+    constant: true,
+  },
+  {
+    inputs: [
+      {
+        internalType: 'string',
+        name: 'newMessage',
+        type: 'string',
+      },
+    ],
+    name: 'update',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+];
 
 let myAccount;
 let web3;
