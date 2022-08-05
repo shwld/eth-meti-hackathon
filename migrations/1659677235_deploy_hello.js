@@ -1,3 +1,5 @@
-module.exports = function(_deployer) {
-  // Use deployer to state migration tasks.
+const HelloContract = artifacts.require('Hello.sol');
+
+module.exports = function (deployer) {
+  deployer.deploy(HelloContract, 'Hello');
 };
